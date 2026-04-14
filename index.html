@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TP Cryptographie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>TRAVAIL PRATIQUE DE CRYPTOGRAPHIE</h1>
+    <h2>FAIT PAR : NEEMA DIABANZA Jacques</h2>
+
+    
+
+    <input type="text" id="text" placeholder="Texte">
+
+
+
+    <input type="text" id="key1" placeholder="Clé 1">
+    <input type="text" id="key2" placeholder="Clé 2 (Juste pour Affine)">
+
+        <select id="algo">
+        <option value="cesar">César</option>
+        <option value="affine">Affine</option>
+        <option value="vigenere">Vigenère</option>
+        <option value="autokey">AutoKey</option>
+        <option value="playfair">Playfair</option>
+    </select>
+
+    <div class="buttons">
+        <button onclick="encrypt()">Chiffrer</button>
+        <button onclick="decrypt()">Déchiffrer</button>
+    </div>
+
+    <h3 id="result"></h3>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
